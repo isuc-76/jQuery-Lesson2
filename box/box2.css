@@ -1,0 +1,10 @@
+
+.box1 {
+  width: 300px;
+  height: 300px;
+  background-color: yellow; 
+  padding: 100px;
+}
+.text {
+  color: red;
+}
