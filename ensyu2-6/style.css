@@ -1,0 +1,47 @@
+
+ /* ブラウザがそれぞれ持っているCSSをリセットするため */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+
+
+/* clearfixを追加 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.main-visual {
+  width: 100%; /* 横幅 */
+  height: 200px; /* 高さ */
+  background-image: url(img/box1.jpg);
+  background-size: auto;
+  background-position: top center;
+}
+.main-visual2 {
+  width: 100%; /* 横幅 */
+  height: 200px; /* 高さ */
+  background-image: url(img/box2.jpg);
+  background-size: auto;
+  background-position: center;
+}
+.main-visual3 {
+  width: 100%; /* 横幅 */
+  height: 200px; /* 高さ */
+  background-image: url(img/box3.jpg);
+  background-size: auto;
+  background-position: center;
+}
+.main-visual4 {
+  width: 100%; /* 横幅 */
+  height: 200px; /* 高さ */
+  background-image: url(img/box4.jpg);
+  background-size: auto;
+  background-position: center;
+}
