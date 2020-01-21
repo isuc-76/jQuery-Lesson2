@@ -1,0 +1,51 @@
+
+ /* ブラウザがそれぞれ持っているCSSをリセットするため */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* clearfixを追加 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-image: url(img/mv.jpg);
+  background-size: 100% 100%;
+}
+/* headerタグ内のheadlineクラスにのみ反映される */
+header .headline {
+  font-size: 32px;
+}
+
+.info-list {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.info-list-item {
+  list-style: none;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #848282;
+}
+
+main {
+  width: 840px;
+  margin: 0 auto; /* 領域を中央揃え */
+  padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+}
