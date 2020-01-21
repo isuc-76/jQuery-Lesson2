@@ -18,17 +18,28 @@ a {
   clear: both;
 }
 
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
 header {
+  position: relative;
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 /* headerタグ内のheadlineクラスにのみ反映される */
 header .headline {
   font-size: 32px;
+}
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.social i {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .nav-list {
@@ -119,12 +130,11 @@ main {
 .pagination p {
   width: 30px;
   height: 30px;
+  margin: 0 5px;
   display: inline-block;
   color: white;
   background-color: #acabab;
   border-radius: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
   line-height: 30px;
 }
 
