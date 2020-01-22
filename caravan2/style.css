@@ -1,5 +1,3 @@
-
- /* ブラウザがそれぞれ持っているCSSをリセットするため */
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +7,11 @@
 a {
   text-decoration: none;
 }
-
-
-/* clearfixを追加 */
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
-
 header, nav, h2, .main-visual, footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
@@ -28,7 +22,6 @@ header {
   margin: 0 auto;
   text-align: center;
 }
-/* headerタグ内のheadlineクラスにのみ反映される */
 header .headline {
   font-size: 32px;
 }
@@ -41,21 +34,19 @@ header .headline {
   display: inline-block;
   margin-left: 20px;
 }
-
 .nav-list {
   text-align: center;
   padding: 10px 0;
   margin: 0 auto;
 }
 .nav-list-item {
-  list-style: none;
+  list-style: none;   
   display: inline-block;
   margin: 0 20px;
 }
-
 .main-visual {
-  width: 100%; /* 横幅 */
-  height: 300px; /* 高さ */
+  width: 100%;
+  height: 300px;
   background-image: url(img/mv.jpg);
   background-size: cover;
   background-position: center;
@@ -63,27 +54,26 @@ header .headline {
 .main-visual-content {
   width: 40%;
   height: 300px;
-  background-color: rgba( 0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
   text-align: center;
   padding-top: 105px;
 }
 .main-visual-text {
-  color: #fff; /* 文字色を白に変更 */
+  color: #fff;
 }
 .main-visual-name {
-  margin-top: 30px; /* 上側の外側の余白 */
-  color: #fff; /* 文字色を白に変更 */
+  margin-top: 30px;
+  color: #fff;
 }
-
 main {
   width: 800px;
-  margin: 0 auto; /* 領域を中央揃え */
-  padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+  margin: 0 auto;
+  padding: 70px 0;
 }
 .blog {
   width: 540px;
   float: left;
-  margin-right: 30px; /* 領域の右側余白 */
+  margin-right: 30px;
 }
 .blog-headline {
   border-bottom: 8px solid #f7f7f7;
@@ -98,17 +88,17 @@ main {
   margin-bottom: 20px;
   border-bottom: 1px solid #f7f7f7;
 }
-.blog-imag {
+.blog-image {
+  float: left;
   height: 180px;
-  float: left;
-}
-.blog-text {
-  padding-top: 30px;
-  padding-left: 25px;
-  float: left;
+  width: 270px;
 }
 .blog-text-headline {
   padding-bottom: 15px;
+}
+.blog-text {
+  float: left;
+  padding: 30px 0 0 25px;
 }
 .blog-date {
   display: inline-block;
@@ -122,22 +112,20 @@ main {
   color: #fff;
   font-size: 11px;
 }
-
 .pagination {
   text-align: center;
   padding-top: 50px;
 }
 .pagination p {
+  display: inline-block;
   width: 30px;
   height: 30px;
   margin: 0 5px;
-  display: inline-block;
-  color: white;
+  color: #fff;
   background-color: #acabab;
   border-radius: 3px;
   line-height: 30px;
 }
-
 .sidebar {
   width: 230px;
   float: left;
@@ -147,6 +135,7 @@ main {
   text-align: center;
   line-height: 0.6;
 }
+ 
 .sidebar-contents {
   padding: 50px 0;
 }
@@ -188,7 +177,6 @@ main {
 .instagram-box:nth-child(6) {
   background-image: url(img/road.jpg);
 }
-
 footer {
   width: 100%;
   height: 120px;
