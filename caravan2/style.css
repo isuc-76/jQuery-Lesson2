@@ -193,31 +193,50 @@ footer {
   header {
     width: 100%;
   }
-  .nav {
+  .nav-list {
     width: 100%;
   }
-  .main-visual {
+  .nav-list-item {
     width: 100%;
+    margin: 0 0 10px 0;
   }
+  .social {
+    display: none;
+  }
+  .main-visual-content {
+    width: 100%;
+}
   main {
     width: 100%;
   }
   .blog {
     width: 100%;
+    margin: 0;
   }
-  .pagination {
-    width: 100%;
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .blog-image {
+    width: 49%;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
   }
   .sidebar {
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
-  .instagram {
-    width: 100%;
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
   }
-  .categories {
-    width: 100%;
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
   }
-  footer {
-    width: 100%;
+  .pagination { 
+   margin-bottom: 50px;
   }
 }
